@@ -120,6 +120,7 @@ public class Product implements Serializable{
 		return Objects.hash(id);
 	}
 	
+	// Foi feito em caso de uso necessario em verificar os orders de produtos
 	@JsonIgnore
 	public Set<Order> getOrders(){
 		Set<Order> set = new HashSet<>();
