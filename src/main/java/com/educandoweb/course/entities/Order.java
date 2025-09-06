@@ -94,7 +94,6 @@ public class Order implements Serializable{
 		return items;
 	}
 	
-	
 	public Payment getPayment() {
 		return payment;
 	}
