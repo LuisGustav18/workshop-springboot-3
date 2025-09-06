@@ -71,7 +71,12 @@ public class OrderItem implements Serializable{
 	public int hashCode() {
 		return Objects.hash(id);
 	}
-
+	
+	// No json aparece apenas os dados get
+	public Double getSubTotal() {
+		return quantity * price;
+	}
+	
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)
